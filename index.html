@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Haixin (Cindy) Jin</title>
+  <meta name="description" content="Haixin (Cindy) Jin — BU CS & Math student focused on data science, analytics, and ML." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/">HJ</a>
+    <nav class="nav">
+      <a href="/">Home</a>
+      <a href="resume.html">Experience</a>
+      <a href="https://github.com/cindyjinn" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:cindyjin03@gmail.com">Email</a>
+      <a href="tel:+16179815218">Phone</a>
+      <!-- Replace with your LinkedIn once ready -->
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Hi, I’m <span class="accent">Haixin (Cindy) Jin</span></h1>
+      <p class="lead">
+        CS & Math @ Boston University (’25). I work on <strong>data analysis</strong>, <strong>machine learning</strong>,
+        and <strong>analytics</strong>—turning messy data into decisions.
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="resume.html">View Experience</a>
+        <a class="btn" href="mailto:cindyjin03@gmail.com">Contact Me</a>
+      </div>
+      <ul class="quick-links">
+        <li><a href="https://github.com/cindyjinn" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="tel:+16179815218">(+1) 617-981-5218</a></li>
+        <li><a href="mailto:cindyjin03@gmail.com">cindyjin03@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </section>
+
+    <section class="highlights">
+      <h2>Selected Highlights</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Business Analytics @ Microsoft (China)</h3>
+          <p>Built data prep pipelines, applied ML (RF, SVM) to marketing performance; collaborated cross-functionally to refine models.</p>
+        </article>
+        <article class="card">
+          <h3>Clinical Data Project</h3>
+          <p>Analyzed semaglutide weight-loss trial data; designed analysis plan, ran Python pipelines, and synthesized findings.</p>
+        </article>
+        <article class="card">
+          <h3>Movie Swipe App</h3>
+          <p>Led dataset management & DB design; analyzed user behavior and built a recommender prototype.</p>
+        </article>
+      </div>
+      <p class="note">See full details on the <a href="resume.html">Experience page</a>.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© <span id="year"></span> Haixin (Cindy) Jin</small>
+  </footer>
+
+  <script>
+    // mobile nav
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    btn.addEventListener('click', () => {
+      const open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      nav.classList.toggle('open');
+    });
+    // year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
