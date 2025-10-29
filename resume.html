@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Experience — Haixin (Cindy) Jin</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Resume for Haixin (Cindy) Jin — Education, Experience, Projects, Skills." />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/">HJ</a>
+    <nav class="nav">
+      <a href="/">Home</a>
+      <a class="active" href="resume.html">Experience</a>
+      <a href="https://github.com/cindyjinn" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:cindyjin03@gmail.com">Email</a>
+      <a href="tel:+16179815218">Phone</a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+  </header>
+
+  <main class="container resume">
+    <section class="resume-header">
+      <h1>Experience</h1>
+      <p>
+        Boston, MA · <a href="mailto:cindyjin03@gmail.com">cindyjin03@gmail.com</a> ·
+        <a href="tel:+16179815218">(+1) 617-981-5218</a> ·
+        <a href="https://github.com/cindyjinn" target="_blank" rel="noopener">github.com/cindyjinn</a>
+      </p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="entry">
+        <div class="entry-head">
+          <h3>Boston University — B.S. in Computer Science & Mathematics</h3>
+          <span class="meta">Boston, MA · Anticipated May 2025</span>
+        </div>
+        <ul class="bullets">
+          <li>GPA: 3.76/4.00; Dean’s List</li>
+          <li>Relevant: Data Science, Machine Learning, Databases (SQL, XML), Python, Java, C, R, Linear Algebra, Discrete Math, Multivariate Calculus</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Professional Experience</h2>
+      <div class="entry">
+        <div class="entry-head">
+          <h3>Microsoft (China) — Business Analytics Intern</h3>
+          <span class="meta">Remote · Jul–Aug 2024</span>
+        </div>
+        <ul class="bullets">
+          <li>Prepared & integrated financial, operational, and customer data for marketing performance analyses.</li>
+          <li>Applied ML (Random Forest, SVM) and statistical techniques to generate actionable insights.</li>
+          <li>Collaborated with cross-functional partners to refine models and deliver higher-quality analyses.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <h3>Malo Clinic — Data Management Intern</h3>
+          <span class="meta">Shanghai, China · Jul–Aug 2023</span>
+        </div>
+        <ul class="bullets">
+          <li>Ingested 400+ patient and diagnostic records; managed daily updates with SQL & Excel.</li>
+          <li>Tracked treatment progress and wrote statistical summaries to support decisions.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="entry">
+        <div class="entry-head">
+          <h3>Semaglutide + Intensive Behavioral Therapy (IBT) — Analysis</h3>
+          <span class="meta">Jul–Sep 2024</span>
+        </div>
+        <ul class="bullets">
+          <li>Designed analysis plan for a randomized, double-blind, placebo-controlled trial.</li>
+          <li>Cleaned data and quantified weight change from baseline using Python.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <h3>Titanic Survival — Predictive Modeling</h3>
+          <span class="meta">May–Jul 2024</span>
+        </div>
+        <ul class="bullets">
+          <li>Built a logistic regression baseline achieving ~86% accuracy from demographic and fare features.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <h3>Movie Recommendation “Swipe” App</h3>
+          <span class="meta">Sep–Dec 2023 · <a href="https://github.com/layadang/CS411-negative-one/blob/main/model_training/api-to-json.py" target="_blank" rel="noopener">repo snippet</a></span>
+        </div>
+        <ul class="bullets">
+          <li>Led dataset management and designed the database for real-time user behavior capture.</li>
+          <li>Analyzed preferences in Python to prototype recommendations from IMDb data.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <h3>Du Fu Poet Website</h3>
+          <span class="meta">Oct–Nov 2024 · <a href="https://github.com/cindyjinn/LC250introtoauthor" target="_blank" rel="noopener">GitHub</a></span>
+        </div>
+        <ul class="bullets">
+          <li>Built a small Flask site introducing classical Chinese poet Du Fu with curated links and texts.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Leadership</h2>
+      <div class="entry">
+        <div class="entry-head">
+          <h3>Teaching Aid Program — English & Math Tutor</h3>
+          <span class="meta">Guizhou, China · 2014–2018</span>
+        </div>
+        <ul class="bullets">
+          <li>Tutored during summer/winter breaks; supported local students over four years.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul class="tags">
+        <li>Python</li><li>R</li><li>Java</li><li>C</li><li>Go</li><li>SQL</li><li>XML</li>
+        <li>ML & Analytics</li><li>Pandas</li><li>Excel</li>
+      </ul>
+      <p class="muted">Languages: Mandarin (Native), English (Professional)</p>
+      <p class="muted">Hobbies: Scuba & Free Diving, Snowboarding</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© <span id="year"></span> Haixin (Cindy) Jin</small>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    btn.addEventListener('click', () => {
+      const open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      nav.classList.toggle('open');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
